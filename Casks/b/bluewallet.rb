@@ -27,7 +27,7 @@ cask "bluewallet" do
     end
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :monterey"
 
   app "BlueWallet.app"
 
