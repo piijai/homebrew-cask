@@ -14,6 +14,7 @@ cask "satellite-eyes" do
   end
 
   auto_updates true
+  depends_on macos: ">= :ventura"
 
   app "Satellite Eyes.app"
 
