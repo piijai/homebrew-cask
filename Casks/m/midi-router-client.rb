@@ -12,6 +12,8 @@ cask "midi-router-client" do
     regex(%r{url=.*?/midi-router-client[._-]v?(\d+(?:\.\d+)+)[._-]Darwin\.(?:dmg|zip)}i)
   end
 
+  disable! date: "2026-09-01", because: :fails_gatekeeper_check
+
   depends_on macos: ">= :tahoe"
 
   app "midi-router-client.app"
