@@ -17,7 +17,8 @@ cask "alt-tab" do
 
   app "AltTab.app"
 
-  uninstall quit: "com.lwouis.alt-tab-macos"
+  uninstall quit:       "com.lwouis.alt-tab-macos",
+            on_upgrade: :quit
 
   zap trash: [
     "~/Library/Application Support/com.lwouis.alt-tab-macos",
