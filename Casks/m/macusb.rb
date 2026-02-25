@@ -5,7 +5,7 @@ cask "macusb" do
   url "https://github.com/Kruszoneq/macUSB/releases/download/v#{version}/macUSB.#{version}.dmg",
       verified: "github.com/Kruszoneq/macUSB/"
   name "macUSB"
-  desc "Tool to create bootable USB installers for macOS"
+  desc "Tool to create bootable USB installers"
   homepage "https://kruszoneq.github.io/macUSB/"
 
   depends_on macos: ">= :sonoma"
